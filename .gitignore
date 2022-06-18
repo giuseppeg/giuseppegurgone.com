@@ -1,0 +1,6 @@
+.next/
+_backup/
+_site/
+node_modules/
+
+.vercel

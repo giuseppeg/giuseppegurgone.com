@@ -1,0 +1,75 @@
+/** define ArticleExcerpt; use strict */
+
+.ArticleExcerpt {
+  font-size: 18px;
+  margin: 3em 1.5em 0;
+}
+
+.ArticleExcerpt:first-child {
+  margin-top: 0;
+}
+
+/*
+.ArticleExcerpt:after {
+  content: "";
+  display: block;
+  width: 2em;
+  height: 1px;
+  background: var(--subtle);
+  margin: 1.5em 0 0;
+}
+*/
+
+.ArticleExcerpt-title {
+  line-height: 2.2;
+}
+
+.ArticleExcerpt-link {
+  font-weight: 400;
+  letter-spacing: -1px;
+  font-size: 1.5em;
+  line-height: 1.1;
+  color: var(--accent);
+  font-family: var(--font);
+}
+
+.ArticleExcerpt-link:hover,
+.ArticleExcerpt-link:focus {
+  color: var(--dark-accent);
+  text-decoration: underline;
+}
+
+.ArticleExcerpt-meta {
+  color: var(--muted-text);
+  font-size: 0.8em;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  letter-spacing: 1px;
+  text-indent: 2px;
+}
+
+.ArticleExcerpt--section {
+  margin-top: 3em;
+  padding-top: 6em;
+  position: relative;
+}
+
+.ArticleExcerpt--section:before {
+  content: "";
+  display: block;
+  width: 2em;
+  height: 1px;
+  background: var(--muted-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media (--screen-large) {
+  .ArticleExcerpt {
+    max-width: var(--screen-large-size);
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

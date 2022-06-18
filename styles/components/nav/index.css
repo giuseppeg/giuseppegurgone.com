@@ -1,0 +1,70 @@
+/** define Nav; use strict */
+
+.Nav {
+  font-size: 18px;
+  line-height: 1.4;
+  margin: 0 1.5rem;
+}
+
+.Nav-group {
+  display: block;
+}
+
+.Nav-group + .Nav-group {
+  margin-top: 0.5em;
+}
+
+.Nav-link,
+.Nav-separator {
+  font-family: var(--font);
+}
+
+.Nav-separator {
+  margin: 0 0.25em;
+}
+
+.Nav-link:hover,
+.Nav-link:focus,
+.Nav-link.is-active {
+  color: var(--accent);
+}
+
+.Nav-link:hover,
+.Nav-link:focus {
+  text-decoration: underline;
+}
+
+.Nav-link.is-active {
+  font-weight: 500;
+}
+
+.Nav-link--social {
+  color: var(--muted-text);
+}
+
+.Nav-separator:after {
+  content: "/";
+}
+
+.Nav--after {
+  border-top: 1px solid var(--subtle);
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  padding-top: 2rem;
+}
+
+@media (--screen-large) {
+  .Nav {
+    max-width: var(--screen-large-size);
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .Nav-link + .Nav-link {
+    padding-left: 0.05em;
+  }
+
+  .Nav-link--blog {
+    width: 100%;
+  }
+}

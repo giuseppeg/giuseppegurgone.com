@@ -1,0 +1,286 @@
+.hljs {
+  background: transparent;
+  margin: 0 !important;
+}
+
+.hljs .c {
+  opacity: 0.6;
+  font-style: italic;
+}
+
+.hljs-string {
+  font-weight: bold;
+}
+
+.hljs-tag .hljs-string,
+.hljs-subst {
+  font-weight: normal;
+}
+
+/* Comment */
+.hljs .err {
+}
+
+/* Error */
+.hljs .k {
+  opacity: 0.8;
+}
+
+/* Keyword */
+.hljs-keyword {
+  opacity: 0.55;
+}
+
+/* Operator */
+.hljs-operator {
+  font-style: italic;
+}
+
+/* Comment.Multiline */
+.hljs-comment {
+  opacity: 0.6;
+  font-weight: bold;
+}
+
+/* Comment.Preproc */
+.hljs .c1 {
+  opacity: 0.6;
+  font-style: italic;
+}
+
+/* Comment.Single */
+.hljs-comment {
+  opacity: 0.6;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Comment.Special */
+.hljs .gd {
+  opacity: 0.6;
+  background-color: #fdd;
+}
+
+/* Generic.Deleted */
+.hljs-deletion {
+  background-color: #faa;
+}
+
+/* Generic.Deleted.Specific */
+.hljs .ge {
+  font-style: italic;
+}
+
+/* Generic.Emph */
+.hljs .gr {
+}
+
+/* Generic.Error */
+.hljs .gh {
+}
+
+/* Generic.Heading */
+.hljs .gi {
+  background-color: #ddffdd;
+}
+
+/* Generic.Inserted */
+.hljs .gi .x {
+  background-color: #aaffaa;
+}
+
+/* Generic.Inserted.Specific */
+.hljs .go {
+}
+
+/* Generic.Output */
+.hljs .gp {
+}
+
+/* Generic.Prompt */
+.hljs-meta.prompt_ {
+  font-weight: bold;
+}
+
+/* Generic.Strong */
+.hljs .gu {
+}
+
+/* Generic.Subheading */
+.hljs .gt {
+}
+
+/* Generic.Traceback */
+.hljs .kc {
+  font-weight: bold;
+}
+
+/* Keyword.Constant */
+.hljs-built_in,
+.hljs-symbol {
+  opacity: 0.8;
+}
+
+/* Keyword.Declaration */
+.hljs .kp {
+  opacity: 0.8;
+}
+
+/* Keyword.Pseudo */
+.hljs .kr {
+  opacity: 0.8;
+}
+
+/* Keyword.Reserved */
+.hljs .kt {
+  font-weight: bold;
+}
+
+/* Keyword.Type */
+.hljs .m {
+}
+
+/* Literal.Number */
+.hljs .s {
+}
+
+/* Literal.String */
+.hljs .na {
+}
+
+.hljs .nx {
+  color: var(--accent);
+}
+
+/* Name.Attribute */
+.hljs .nb {
+  font-style: italic;
+}
+
+/* Name.Builtin */
+.hljs .nc {
+  font-weight: bold;
+}
+
+/* Name.Class */
+.hljs .no {
+}
+
+/* Name.Constant */
+.hljs .ni {
+}
+
+/* Name.Entity */
+.hljs .ne {
+  font-weight: bold;
+}
+
+/* Name.Exception */
+.hljs .nf {
+  font-weight: bold;
+}
+
+/* Name.Function */
+.hljs .nn {
+}
+
+/* Name.Namespace */
+.hljs .nt {
+}
+
+/* Name.Tag */
+.hljs .nv {
+}
+
+/* Name.Variable */
+.hljs .ow {
+  font-weight: bold;
+}
+
+/* Operator.Word */
+.hljs .w {
+}
+
+/* Text.Whitespace */
+.hljs .mf {
+}
+
+/* Literal.Number.Float */
+.hljs .mh {
+}
+
+/* Literal.Number.Hex */
+.hljs .mi {
+}
+
+/* Literal.Number.Integer */
+.hljs .mo {
+}
+
+/* Literal.Number.Oct */
+.hljs .sb {
+}
+
+/* Literal.String.Backtick */
+.hljs .sc {
+}
+
+/* Literal.String.Char */
+.hljs .sd {
+}
+
+/* Literal.String.Doc */
+.hljs .s2 {
+  font-weight: bold;
+}
+
+/* Literal.String.Double */
+.hljs .se {
+}
+
+/* Literal.String.Escape */
+.hljs .sh {
+}
+
+/* Literal.String.Heredoc */
+.hljs .si {
+}
+
+/* Literal.String.Interpol */
+.hljs .sx {
+}
+
+/* Literal.String.Other */
+.hljs .sr {
+}
+
+/* Literal.String.Regex */
+.hljs .s1 {
+  font-weight: bold;
+}
+
+/* Literal.String.Single */
+.hljs .ss {
+}
+
+/* Literal.String.Symbol */
+.hljs .bp {
+}
+
+/* Name.Builtin.Pseudo */
+.hljs .vc {
+}
+
+/* Name.Variable.Class */
+.hljs .vg {
+}
+
+/* Name.Variable.Global */
+.hljs .vi {
+}
+
+/* Name.Variable.Instance */
+.hljs .il {
+}
+
+/* Literal.Number.Integer.Long */

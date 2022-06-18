@@ -1,0 +1,361 @@
+.Copy h2,
+.Copy h2 a,
+.Copy h2 a:hover,
+.Copy h2 a:focus,
+.Copy h3,
+.Copy h3 a,
+.Copy h3 a:hover,
+.Copy h3 a:focus,
+.Copy h4,
+.Copy h4 a,
+.Copy h4 a:hover,
+.Copy h4 a:focus,
+.Copy h5,
+.Copy h5 a,
+.Copy h5 a:hover,
+.Copy h5 a:focus,
+.Copy h6,
+.Copy h6 a,
+.Copy h6 a:hover,
+.Copy h6 a:focus {
+  color: var(--heading-color);
+  text-decoration: none;
+  border-bottom: 0;
+}
+
+.Copy h2 {
+  font-size: 1.5em;
+  margin: 1.5em 0 0.5em;
+  font-weight: normal;
+}
+
+.Copy h3 {
+  font-size: 1.2em;
+  font-weight: normal;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+
+.Copy h4 {
+  font-size: 1em;
+  font-weight: 600;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: var(--muted-text);
+}
+
+.Copy h1:target,
+.Copy h2:target,
+.Copy h3:target,
+.Copy h4:target,
+.Copy h5:target,
+.Copy h6:target {
+  position: relative;
+  padding-top: 3rem;
+}
+
+.Copy h1:target:before,
+.Copy h2:target:before,
+.Copy h3:target:before,
+.Copy h4:target:before,
+.Copy h5:target:before,
+.Copy h6:target:before {
+  content: "→";
+  position: absolute;
+  right: 100%;
+  margin-right: 0.75rem;
+  opacity: 0;
+  animation: highlight 3s ease-out;
+}
+
+.Copy h1:target:after,
+.Copy h2:target:after,
+.Copy h3:target:after,
+.Copy h4:target:after,
+.Copy h5:target:after,
+.Copy h6:target:after {
+  content: "";
+  position: absolute;
+  right: 100%;
+  line-height: 0;
+  width: 2em;
+  height: 2em;
+  opacity: 0;
+  background-color: currentColor;
+  border-radius: 100%;
+  margin-right: -0.1em;
+  top: 3rem;
+  margin-top: -0.15em;
+  opacity: 0;
+  animation: highlightCircle 2s ease-out;
+}
+
+@keyframes highlight {
+  10% {
+    opacity: 0.7;
+  }
+  75% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes highlightCircle {
+  10% {
+    opacity: 0.15;
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(3);
+  }
+}
+
+.Copy p + p {
+  margin: 1.5em 0 0;
+}
+
+.Copy ol,
+.Copy ul {
+  font-weight: 600;
+  margin: 1.5em 0;
+  padding: 0;
+  list-style-position: inside;
+  list-style-type: circle;
+}
+
+.Copy ol ol,
+.Copy ul ul {
+  margin: 0.5em 0;
+  padding-left: 1.3em;
+}
+
+.Copy li {
+  font-weight: 400;
+  margin-bottom: 0.5em;
+}
+
+.Copy li:hover,
+.Copy li:focus {
+  list-style-type: disc;
+}
+
+.Copy blockquote {
+  border: 0;
+  margin: 3em 0;
+  padding: 0;
+  position: relative;
+  font-style: italic;
+}
+
+.Copy blockquote:before {
+  content: "“";
+  display: block;
+  position: absolute;
+  font-size: 2em;
+  left: -0.5em;
+  top: -0.25em;
+  line-height: 1;
+}
+
+.Copy blockquote:after {
+  content: "";
+  display: block;
+  width: 2em;
+  height: 1px;
+  background: var(--muted-text);
+  margin: 1.5em 0;
+}
+
+.Copy blockquote footer {
+  margin-top: 1.5em;
+  font-size: 0.8em;
+}
+
+@media (--screen-large) {
+  .Copy blockquote:before {
+    left: -0.75em;
+  }
+
+  .Copy blockquote footer {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    margin-top: -0.7em;
+    padding-left: 3em;
+  }
+}
+
+.Copy .Tldr,
+.Copy figure,
+.Copy .gist,
+.Copy pre,
+.Copy-embedTestcase {
+  margin: 3em -1.5em;
+}
+
+.Copy iframe,
+.Copy video {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.Copy iframe,
+.Copy video,
+.Copy-embedTweet {
+  margin: 3em auto;
+}
+
+.Copy .Video {
+  height: 350px;
+}
+
+.Copy video.Video {
+  height: auto;
+}
+
+.Copy-embedTweet iframe,
+.Copy-embedTweet twitter-widget,
+.Copy-embedTweet .twitter-tweet {
+  margin: 0 auto !important;
+  filter: grayscale(1);
+}
+
+@media (--screen-large) {
+  .Copy .Tldr,
+  .Copy figure,
+  .Copy .gist,
+  .Copy pre,
+  .Copy-embedTestcase {
+    margin: 3em -2em;
+  }
+
+  .Copy iframe,
+  .Copy video {
+    width: 112% !important;
+    margin: 3em -6%;
+  }
+}
+
+.Copy figcaption {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  background: var(--subtle);
+  padding: 1em;
+  border-radius: 0 0 8px 8px;
+}
+
+.Copy img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px 1px var(--subtle);
+}
+
+.Copy .emoji {
+  width: auto;
+  display: inline;
+}
+
+.Copy a {
+  /*font-weight: 500;*/
+  /*text-decoration: underline;*/
+  border-bottom: 1px outset;
+  color: var(--accent);
+  transition: color 0.2s ease;
+}
+
+.Copy a:hover,
+.Copy a:focus {
+  color: var(--dark-accent);
+  border-bottom: 1px solid;
+}
+
+.Copy code {
+  border-radius: 6px;
+  vertical-align: baseline;
+  padding: 0.15em 0.5em;
+  font-size: 0.9em;
+  font-family: Menlo, monospace;
+  background-color: var(--subtle);
+  /*border-bottom: 1px solid var(--muted-text);*/
+}
+
+.Copy pre {
+  position: relative;
+  display: block;
+  overflow-x: auto;
+  padding: 1rem 1.25rem;
+  margin: 3rem -0.5rem 4rem;
+  border-radius: 8px;
+  background-color: var(--subtle);
+  transition: box-shadow 0.2s ease-out;
+  /*box-shadow: 0 20px 30px rgb(0, 0, 0, 0.1);*/
+}
+
+/*.Copy pre:hover {
+  box-shadow: 0 15px 30px rgb(0, 0, 0, 0.2);
+}*/
+
+@media (--screen-large) {
+  .Copy pre {
+    padding: 2rem;
+    margin: 3rem -1.5rem 4rem;
+  }
+}
+
+.Copy pre code {
+  display: block;
+  border: 0;
+  border-radius: none;
+  padding-left: 0;
+}
+
+@media (--screen-large) {
+  .Copy code[data-lang]:before {
+    content: attr(data-lang);
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5em 1em;
+    /*background-color: var(--muted-text);*/
+    background-color: rgba(0, 0, 0, 0.1);
+    color: var(--text-color);
+    font-size: 0.8em;
+    opacity: 1;
+    transition: opacity 0.2s ease-out;
+    line-height: 1.2;
+  }
+
+  .Copy pre:hover code[data-lang]:before {
+    opacity: 0;
+  }
+}
+
+.Copy hr {
+  background-color: var(--muted-text);
+  height: 1px;
+  border: 0;
+  margin: 1.5em 0;
+}
+
+.Copy button {
+  border: 2px solid var(--text-color);
+  display: inline-block;
+  border-radius: 3px;
+  padding: 0.25em 0.5em;
+  cursor: pointer;
+  user-select: none;
+  margin: 1em 0 1.5em;
+  color: var(--text-color);
+}
+
+.Copy button:hover {
+  background-color: var(--text-color);
+  color: var(--background-color);
+}
+
+.Copy button:active {
+  transform: scale(0.9);
+}

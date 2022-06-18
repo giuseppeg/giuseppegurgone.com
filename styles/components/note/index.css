@@ -1,0 +1,10 @@
+.Note {
+  border: 1px solid var(--muted-text);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.Note--center {
+  font-weight: bold;
+  text-align: center;
+}
