@@ -1,4 +1,4 @@
-import config from "../config";
+import config from "../config.mjs";
 import BaseLayout from "./base";
 import Time from "../components/Time";
 

@@ -1,5 +1,5 @@
 import Head from "next/head";
-import config from "../config";
+import config from "../config.mjs";
 
 export default function BaseLayout({ children, meta = {} }) {
   return (
@@ -13,6 +13,12 @@ export default function BaseLayout({ children, meta = {} }) {
         />
         <link rel="canonical" href={`${config.url}${meta.slug}`} />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link
+          href={`${config.url}feed.xml`}
+          rel="alternate"
+          type="application/rss+xml"
+          title={config.title}
+        />
         {meta.preview_image ? (
           <>
             <meta name="twitter:card" content="summary" />

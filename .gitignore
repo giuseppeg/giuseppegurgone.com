@@ -1,6 +1,5 @@
-.next/
-_backup/
-_site/
-node_modules/
-
+.next
 .vercel
+node_modules
+public/feed.xml
+

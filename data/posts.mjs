@@ -20,6 +20,12 @@ export function getPosts() {
   });
 }
 
+export function getPublicPosts() {
+  return getPosts()
+    .filter((p) => !p.private && !p.draft)
+    .sort((a, b) => Date.parse(b.date) - Date.parse(a.date));
+}
+
 export const suggestedPosts = [
   {
     title: "Quantum Mechanics Distilled",
