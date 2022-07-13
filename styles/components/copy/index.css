@@ -278,6 +278,7 @@
   font-size: 0.9em;
   font-family: Menlo, monospace;
   background-color: var(--subtle);
+  white-space: nowrap;
   /*border-bottom: 1px solid var(--muted-text);*/
 }
 
@@ -309,6 +310,7 @@
   border: 0;
   border-radius: none;
   padding-left: 0;
+  white-space: inherit;
 }
 
 @media (--screen-large) {

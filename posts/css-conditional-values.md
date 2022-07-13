@@ -18,7 +18,7 @@ body {
 }
 
 .widget {
-  visibility: ; /* on ? visible : hidden */
+  visibility: /* on ? visible : hidden */ ;
 }
 ```
 
@@ -47,8 +47,8 @@ The answer is with a fallback value that CSS will pick up when the `--switch` pr
 
 ```css
 body {
-  /* inherit is an invalid value! */
-  --switch: inherit;
+  /* initial is an invalid value! */
+  --switch: initial;
 }
 
 .widget {
@@ -58,6 +58,6 @@ body {
 }
 ```
 
-By setting `--switch` to `inherit` (an invalid value), the `--visibility` property will compute to the fallback `hidden`.
+By setting `--switch` to `initial` (a [guaranteed-invalid value](https://www.w3.org/TR/css-variables-1/#invalid-variables)), the `--visibility` property will compute to the fallback `hidden`.
 
-We can therefore switch the value of `--switch` between `on` and `inherit` to change visibility!
+We can therefore switch the value of `--switch` between `on` and `initial` to change visibility!
