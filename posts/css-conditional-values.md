@@ -8,7 +8,7 @@ suggested: true
 
 CSS lacks a general purpose ternary operator or if/else statements.
 
-However, in many situations there is a small trick that we can use to toggle values using invalid custom properties and fallback values.
+However, in many situations there is a small trick that we can use to toggle values using invalid custom properties and fallback values. I learn't this trick from Devon Govett.
 
 Let's say we want to switch `visibility` between `visible` and `hidden` when a custom property is set or unset.
 
